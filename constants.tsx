@@ -80,7 +80,7 @@ export const VEXA_MANIFEST: VexaManifest = {
         repo: "https://github.com/vexadevs-ship-it/Playistan-ISE",
         video: "https://youtube.com/@VexaDevs"
       },
-      stack: ["MERN Stack", "Socket.io", "Vite", "Cloudinary"],
+      stack: ["MERN Stack", "Socket.io", "JWT", "Cloudinary"],
       architecture_specs: {
         complexity_rating: "High - Full Stack ISE",
         layer_breakdown: [
