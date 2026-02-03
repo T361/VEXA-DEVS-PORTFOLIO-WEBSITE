@@ -71,13 +71,159 @@ export const VEXA_MANIFEST: VexaManifest = {
     ]
   },
   freelance_asset_registry: {
+    "playistan_booking": {
+      id: "playistan_booking",
+      public_name: "Playistan",
+      codename: "ARENA_OPS",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/vexadevs-ship-it/Playistan-ISE",
+        video: "https://youtube.com/@VexaDevs"
+      },
+      stack: ["MERN Stack", "Socket.io", "Vite", "Cloudinary"],
+      architecture_specs: {
+        complexity_rating: "High - Full Stack ISE",
+        layer_breakdown: [
+          "Real-time Socket Communication",
+          "JWT Auth with OTP (Nodemailer)",
+          "Admin Dashboard (Glass & Steel UI)"
+        ],
+        core_features: [
+          "Manual Payment Verification (Screenshots)",
+          "Real-time Slot Availability",
+          "City-based Ground Filtering",
+          "Community Chat (Text/Media)"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "React 19 (Vite)",
+          ui_library: "Glassmorphism (CSS Vars)",
+          state_management: "Context API"
+        },
+        backend: {
+          runtime: "Node.js (Express)",
+          database: "MongoDB (Mongoose)"
+        }
+      }
+    },
+    "you_gram_social": {
+      id: "you_gram_social",
+      public_name: "You-Gram",
+      codename: "SOCIAL_GRID",
+      status: "STAGING",
+      asset_links: {
+        repo: "https://github.com/vexadevs-ship-it/You-Gram",
+        demo: "https://you-gram.vercel.app",
+        video: "https://youtube.com/@VexaDevs"
+      },
+      stack: ["MERN Stack", "Cloudinary", "Multer", "JWT"],
+      architecture_specs: {
+        complexity_rating: "High",
+        layer_breakdown: [
+          "MongoDB Aggregation Pipelines",
+          "Secure Auth (Bcrypt/JWT)",
+          "Image Optimization (Cloudinary)"
+        ],
+        core_features: [
+          "Dynamic Feed Generation",
+          "Image Uploads via Multer",
+          "Follow/Unfollow Graph",
+          "Real-time Like/Comment"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "React.js",
+          ui_library: "Tailwind CSS",
+          state_management: "Redux Toolkit"
+        },
+        backend: {
+          runtime: "Node.js (Express)",
+          database: "MongoDB Atlas"
+        }
+      }
+    },
+    "facebook_clone_monorepo": {
+      id: "facebook_clone_monorepo",
+      public_name: "Mini Facebook",
+      codename: "META_FORGE",
+      status: "MVP",
+      asset_links: {
+        repo: "https://github.com/vexadevs-ship-it/MINI-FB-CLONE-MONOREPO",
+        demo: "https://minifacebookclone.vercel.app/",
+        video: "https://youtube.com/@VexaDevs"
+      },
+      stack: ["Next.js", "Express", "MongoDB", "TypeScript"],
+      architecture_specs: {
+        complexity_rating: "Medium",
+        layer_breakdown: [
+          "Monorepo Structure",
+          "Zod Data Validation",
+          "JWT Authentication"
+        ],
+        core_features: [
+          "Full-Stack Type Safety",
+          "Post CRUD Operations",
+          "Responsive Tailwind UI",
+          "Dual Deployment (Vercel/Railway)"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "Next.js",
+          ui_library: "Tailwind CSS",
+          state_management: "React Hooks"
+        },
+        backend: {
+          runtime: "Express.js",
+          database: "MongoDB (Mongoose)"
+        }
+      }
+    },
+    "campus_onestop": {
+      id: "campus_onestop",
+      public_name: "Campus OneStop",
+      codename: "STUDENT_HUB",
+      status: "MVP",
+      asset_links: {
+        repo: "https://github.com/vexadevs-ship-it/Campus-OneStop",
+        video: "https://youtube.com/@VexaDevs"
+      },
+      stack: ["MERN Stack", "Vite", "Tailwind", "JWT"],
+      architecture_specs: {
+        complexity_rating: "Institutional",
+        layer_breakdown: [
+          "Role-Based Access Control (RBAC)",
+          "Modular Architecture",
+          "Secure JWT Auth"
+        ],
+        core_features: [
+          "Student Complaint System",
+          "Teacher Approval Workflows",
+          "Admin Status Management",
+          "Centralized Campus Requests"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "React (Vite)",
+          ui_library: "Tailwind CSS",
+          state_management: "Context API"
+        },
+        backend: {
+          runtime: "Node.js (Express)",
+          database: "MongoDB"
+        }
+      }
+    },
     "legalgram_enterprise": {
       id: "legalgram_enterprise",
       public_name: "Legalgram",
       codename: "LG_PRIME",
       status: "PRODUCTION",
       asset_links: {
-        repo: "https://github.com/vexadevs-ship-it/legalgram-core",
+        repo: "https://github.com/vexadevs-ship-it/Legalgram",
         demo: "https://legalgram.co",
         video: "https://youtube.com/@VexaDevs"
       },
@@ -107,150 +253,6 @@ export const VEXA_MANIFEST: VexaManifest = {
           runtime: "Supabase Edge",
           database: "PostgreSQL (Supabase)",
           caching: "Supabase Realtime"
-        }
-      }
-    },
-    "playistan_booking": {
-      id: "playistan_booking",
-      public_name: "Playistan",
-      codename: "ARENA_OPS",
-      status: "PRODUCTION",
-      asset_links: {
-        repo: "https://github.com/vexadevs-ship-it/Playistan-ISE",
-        video: "https://youtube.com/@VexaDevs"
-      },
-      stack: ["MERN Stack", "Google Maps API", "Stripe"],
-      architecture_specs: {
-        complexity_rating: "High",
-        layer_breakdown: [
-          "Geo-Spatial Query Engine",
-          "Concurrency Booking Locks",
-          "Vendor Dashboard Logic"
-        ],
-        core_features: [
-          "Real-time Ground Availability",
-          "Team Matchmaking Algorithms",
-          "Integrated Payment Gateway",
-          "Automated SMS Alerts"
-        ]
-      },
-      technical_deep_dive: {
-        frontend: {
-          framework: "React (Vite)",
-          ui_library: "MUI v5",
-          state_management: "Redux Toolkit"
-        },
-        backend: {
-          runtime: "Express.js API",
-          database: "MongoDB (GeoJSON)"
-        }
-      }
-    },
-    "you_gram_social": {
-      id: "you_gram_social",
-      public_name: "You-Gram",
-      codename: "SOCIAL_GRID",
-      status: "STAGING",
-      asset_links: {
-        repo: "https://github.com/vexadevs-ship-it/You-Gram",
-        video: "https://youtube.com/@VexaDevs"
-      },
-      stack: ["MERN Stack", "Cloudinary", "Socket.io"],
-      architecture_specs: {
-        complexity_rating: "High",
-        layer_breakdown: [
-          "Media Transcoding Pipeline",
-          "Feed Aggregation Algorithm",
-          "Story Expiration Workers"
-        ],
-        core_features: [
-          "High-Res Image Uploads (Cloudinary)",
-          "Infinite Scroll Feeds",
-          "Real-time Notification Fan-out",
-          "24h Story Logic"
-        ]
-      },
-      technical_deep_dive: {
-        frontend: {
-          framework: "React",
-          ui_library: "Tailwind CSS",
-          state_management: "Redux Toolkit"
-        },
-        backend: {
-          runtime: "Node.js (Express)",
-          database: "MongoDB Atlas"
-        }
-      }
-    },
-    "facebook_clone_monorepo": {
-      id: "facebook_clone_monorepo",
-      public_name: "Facebook Clone",
-      codename: "META_FORGE",
-      status: "MVP",
-      asset_links: {
-        repo: "https://github.com/vexadevs-ship-it/MINI-FB-CLONE-MONOREPO",
-        video: "https://youtube.com/@VexaDevs"
-      },
-      stack: ["Next.js", "MongoDB", "Express", "Tailwind"],
-      architecture_specs: {
-        complexity_rating: "High Fidelity",
-        layer_breakdown: [
-          "Social Graph Logic (Aggregations)",
-          "Complex Data Modeling",
-          "O-Auth Integration"
-        ],
-        core_features: [
-          "Complex Recursive Comment Threads",
-          "Friend Recommendation Engine",
-          "Live Post Reactions",
-          "Dark Mode Native"
-        ]
-      },
-      technical_deep_dive: {
-        frontend: {
-          framework: "Next.js 13",
-          ui_library: "Tailwind CSS",
-          state_management: "Recoil"
-        },
-        backend: {
-          runtime: "Node.js (Express)",
-          database: "MongoDB"
-        }
-      }
-    },
-    "campus_onestop": {
-      id: "campus_onestop",
-      public_name: "Campus OneStop",
-      codename: "STUDENT_HUB",
-      status: "MVP",
-      asset_links: {
-        repo: "https://github.com/vexadevs-ship-it/Campus-OneStop",
-        video: "https://youtube.com/@VexaDevs"
-      },
-      stack: ["MERN Stack", "React", "Node.js", "Express"],
-      architecture_specs: {
-        complexity_rating: "Institutional",
-        layer_breakdown: [
-          "RBAC (Student/Teacher/Admin)",
-          "Academic Record Digitization",
-          "Assignment Submission Pipeline"
-        ],
-        core_features: [
-          "Centralized Student Profile",
-          "Real-time Attendance Tracking",
-          "Course Material Repository",
-          "Grade Dissemination System"
-        ]
-      },
-      technical_deep_dive: {
-        frontend: {
-          framework: "React",
-          ui_library: "Tailwind CSS",
-          state_management: "Redux"
-        },
-        backend: {
-          runtime: "Node.js",
-          database: "MongoDB"
         }
       }
     }

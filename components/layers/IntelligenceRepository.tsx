@@ -65,7 +65,7 @@ const ProjectCard: React.FC<{ project: ProjectAsset }> = ({ project }) => (
           </div>
        </div>
 
-       <div className="flex flex-col md:flex-row gap-3 mt-auto">
+       <div className="flex flex-col md:flex-row gap-3 mt-auto relative z-10">
           <a href={project.asset_links.repo} target="_blank" rel="noreferrer" className="flex-1 flex items-center justify-center gap-2 py-2 text-xs font-mono bg-white/5 hover:bg-neon-cobalt hover:text-white transition-all border border-white/10 hover:border-neon-cobalt rounded-sm">
              <Github size={14} />
              <span>SOURCE</span>
