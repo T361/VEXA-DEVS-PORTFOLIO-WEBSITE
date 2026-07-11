@@ -223,7 +223,8 @@ export const VEXA_MANIFEST: VexaManifest = {
       codename: "WALRUS_OPS",
       status: "PRODUCTION",
       asset_links: {
-        repo: "https://github.com/T361/CHATWALRUS"
+        repo: "https://github.com/T361/CHATWALRUS",
+        demo: "https://chatwalrus.vercel.app"
       },
       stack: ["Next.js 16", "Supabase", "TypeScript", "Zod", "Recharts"],
       architecture_specs: {
@@ -293,7 +294,8 @@ export const VEXA_MANIFEST: VexaManifest = {
       codename: "ARCHITECTURE_OF_TRUTH",
       status: "PRODUCTION",
       asset_links: {
-        repo: "https://github.com/T361/tashitechwebsite"
+        repo: "https://github.com/T361/tashitechwebsite",
+        demo: "https://tashitechwebsite.vercel.app"
       },
       stack: ["Next.js 14", "TypeScript", "FastAPI Chatbot"],
       architecture_specs: {
@@ -351,6 +353,208 @@ export const VEXA_MANIFEST: VexaManifest = {
         backend: {
           runtime: "Node.js (ESM)",
           database: "Airtable / Webflow CMS"
+        }
+      }
+    },
+    "frontend_project_planner": {
+      id: "frontend_project_planner",
+      public_name: "Frontend Project Planner AI",
+      codename: "ATOMIC_PLANNER",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/frontend-project-planner-ai",
+        demo: "https://frontend-project-planner-ai.vercel.app"
+      },
+      stack: ["Next.js 16", "Supabase", "Groq", "TypeScript"],
+      architecture_specs: {
+        complexity_rating: "Medium - AI Tooling",
+        layer_breakdown: [
+          "Atomic Design Plan Generation (Atoms/Molecules/Organisms)",
+          "Supabase RLS + Google OAuth",
+          "Groq LLM Inference"
+        ],
+        core_features: [
+          "Brief-to-Plan-Tree Generation",
+          "Lazy Node Expansion (Drill Into Any Page)",
+          "Edit/Accept/Reject/Regenerate Per Node",
+          "Export to Markdown, JSON, or Scaffolding Prompt"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "Next.js 16 (App Router, Turbopack)",
+          ui_library: "shadcn/ui + Tailwind CSS v4",
+          state_management: "React Hooks"
+        },
+        backend: {
+          runtime: "Next.js Route Handlers",
+          database: "Supabase (Postgres, RLS)"
+        }
+      }
+    },
+    "legalgram_chatbot": {
+      id: "legalgram_chatbot",
+      public_name: "Legalgram Chatbot Service",
+      codename: "LG_BRAIN",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/legalgramchatbotbackend"
+      },
+      stack: ["Python", "FastAPI"],
+      architecture_specs: {
+        complexity_rating: "Medium - AI Microservice",
+        layer_breakdown: [
+          "FastAPI Inference Service",
+          "Integrated into Legalgram's Super App"
+        ],
+        core_features: [
+          "AI Legal Assistant Chat",
+          "Contextual, Real-Time Responses"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "N/A",
+          ui_library: "N/A",
+          state_management: "N/A"
+        },
+        backend: {
+          runtime: "Python (FastAPI)",
+          database: "N/A"
+        }
+      }
+    },
+    "star_sitters_backend": {
+      id: "star_sitters_backend",
+      public_name: "Star Sitters Backend",
+      codename: "SITTER_CORE",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/starsitters-backend"
+      },
+      stack: ["PL/pgSQL", "Supabase", "Deno Edge Functions", "Firebase Cloud Messaging"],
+      architecture_specs: {
+        complexity_rating: "High - Marketplace Backend",
+        layer_breakdown: [
+          "Row-Level Security Policy Set",
+          "SECURITY DEFINER RPCs",
+          "Deno Edge Functions (Push, Guardian Consent Email)"
+        ],
+        core_features: [
+          "Two-Sided Marketplace (Sitters + Families)",
+          "Guardian Consent + Admin Certification Flow",
+          "Job Lifecycle State Machine",
+          "Clock-In/Out Wage Calculation"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "N/A",
+          ui_library: "N/A",
+          state_management: "N/A"
+        },
+        backend: {
+          runtime: "Supabase Edge (Deno)",
+          database: "PostgreSQL (Supabase, RLS)"
+        }
+      }
+    },
+    "star_sitters_core": {
+      id: "star_sitters_core",
+      public_name: "Star Sitters Core",
+      codename: "SITTER_MOBILE_CORE",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/star_sitters_core"
+      },
+      stack: ["Dart", "Flutter"],
+      architecture_specs: {
+        complexity_rating: "Medium - Shared Mobile Package",
+        layer_breakdown: [
+          "Shared Models & Services Across Flutter Apps"
+        ],
+        core_features: [
+          "Consumed by Star Sitters Mobile Apps"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "Flutter",
+          ui_library: "N/A",
+          state_management: "N/A"
+        },
+        backend: {
+          runtime: "N/A",
+          database: "N/A"
+        }
+      }
+    },
+    "smart_disaster_response": {
+      id: "smart_disaster_response",
+      public_name: "Smart Disaster Response MIS",
+      codename: "RESPONSE_GRID",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/Smart-Disaster-Response-MIS"
+      },
+      stack: ["Next.js", "MS SQL Server", "T-SQL"],
+      architecture_specs: {
+        complexity_rating: "High - Group Database Project",
+        layer_breakdown: [
+          "Raw T-SQL (No ORM) via mssql npm Package",
+          "Triggers, Views, Indexes, ACID Transactions",
+          "RBAC + Approval Workflows"
+        ],
+        core_features: [
+          "Incident Reporting & Rescue Team Dispatch",
+          "Warehouse Inventory & Resource Allocation",
+          "Hospital Coordination",
+          "Financial Tracking & Analytics"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "Next.js (App Router)",
+          ui_library: "Tailwind CSS",
+          state_management: "React Hooks"
+        },
+        backend: {
+          runtime: "Next.js Route Handlers",
+          database: "Microsoft SQL Server"
+        }
+      }
+    },
+    "intellicase": {
+      id: "intellicase",
+      public_name: "IntelliCase — FBI Ops Management",
+      codename: "CASE_FILE",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/IntelliCase-FBI-Operations-Management-System"
+      },
+      stack: ["Java", "JavaFX", "SQLite", "Maven"],
+      architecture_specs: {
+        complexity_rating: "High - Group Desktop Application",
+        layer_breakdown: [
+          "4-Tier Layered Architecture",
+          "GRASP & GoF Design Patterns",
+          "Offline SQLite Persistence"
+        ],
+        core_features: [
+          "Case & Operations Management",
+          "Role-Based Use Cases",
+          "Offline-First Desktop Client"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "JavaFX 21",
+          ui_library: "Custom Layered SPA",
+          state_management: "N/A"
+        },
+        backend: {
+          runtime: "Java 17+",
+          database: "SQLite"
         }
       }
     },
