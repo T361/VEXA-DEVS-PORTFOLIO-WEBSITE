@@ -113,6 +113,12 @@ const App: React.FC = () => {
                 </span>
                 <span>UPLINK ESTABLISHED</span>
              </div>
+             <div className="flex flex-col gap-1 mt-3 pt-3 border-t border-white/5 font-mono text-[10px] text-gray-500">
+                <a href="https://t361.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cobalt transition-colors">RESUME_NODE</a>
+                <a href="https://github.com/T361" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cobalt transition-colors">GITHUB</a>
+                <a href="https://www.linkedin.com/in/taimoor-shaukat-206a71323" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cobalt transition-colors">LINKEDIN</a>
+                <a href="https://www.upwork.com/freelancers/~01a0ea55afcec09f6f" target="_blank" rel="noopener noreferrer" className="hover:text-neon-cobalt transition-colors">UPWORK</a>
+             </div>
           </div>
         </div>
       </aside>
