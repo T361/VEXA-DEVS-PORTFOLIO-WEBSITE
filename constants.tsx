@@ -217,6 +217,143 @@ export const VEXA_MANIFEST: VexaManifest = {
         }
       }
     },
+    "chatwalrus_dashboard": {
+      id: "chatwalrus_dashboard",
+      public_name: "ChatWalrus Dashboard",
+      codename: "WALRUS_OPS",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/CHATWALRUS"
+      },
+      stack: ["Next.js 16", "Supabase", "TypeScript", "Zod", "Recharts"],
+      architecture_specs: {
+        complexity_rating: "High - Client Delivery (Trilles AI)",
+        layer_breakdown: [
+          "Thinkific + Zoom Data Sync Pipelines",
+          "Scheduled Cron Jobs (CRON_SECRET auth)",
+          "Milestone/Alert Engine"
+        ],
+        core_features: [
+          "Per-Company Cohort Dashboards",
+          "Learner Progress & Assessment Tracking",
+          "Gamified Leaderboards",
+          "CSV/JSON Exports"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "Next.js 16 (App Router)",
+          ui_library: "Tailwind CSS + Recharts",
+          state_management: "Server Components"
+        },
+        backend: {
+          runtime: "Next.js Route Handlers",
+          database: "Supabase (Postgres)"
+        }
+      }
+    },
+    "fast_roadmap": {
+      id: "fast_roadmap",
+      public_name: "FAST Roadmap",
+      codename: "EMERGENT_ATLAS",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/ROADMAP-APP"
+      },
+      stack: ["Next.js 14", "MongoDB", "Three.js", "Framer Motion"],
+      architecture_specs: {
+        complexity_rating: "Medium - Community Platform",
+        layer_breakdown: [
+          "Atomic Design Component System",
+          "3D Cyber Background (react-three-fiber)",
+          "Jest + Playwright Test Suite"
+        ],
+        core_features: [
+          "Curated Per-Course Learning Resources",
+          "Senior's Advice / Community Wisdom Feed",
+          "Curriculum Progress Tracking",
+          "Mobile-First Navigation"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "Next.js 14 (App Router)",
+          ui_library: "Tailwind CSS",
+          state_management: "React Hooks"
+        },
+        backend: {
+          runtime: "Next.js API Routes",
+          database: "MongoDB"
+        }
+      }
+    },
+    "tashi_tech_website": {
+      id: "tashi_tech_website",
+      public_name: "Tashi Technologies",
+      codename: "ARCHITECTURE_OF_TRUTH",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/tashitechwebsite"
+      },
+      stack: ["Next.js 14", "TypeScript", "FastAPI Chatbot"],
+      architecture_specs: {
+        complexity_rating: "Medium - Corporate Platform",
+        layer_breakdown: [
+          "Swiss-Style High-Contrast Design System",
+          "FastAPI-Powered AI Chatbot Microservice",
+          "Zero-Downtime CI/CD"
+        ],
+        core_features: [
+          "Corporate Digital Identity / Landing",
+          "Verifiable AI & Identity (DID) Messaging",
+          "Embedded AI Chatbot"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "Next.js 14",
+          ui_library: "Custom Design System",
+          state_management: "React Hooks"
+        },
+        backend: {
+          runtime: "Python (FastAPI)",
+          database: "N/A"
+        }
+      }
+    },
+    "airtable_webflow_sync": {
+      id: "airtable_webflow_sync",
+      public_name: "Airtable-Webflow Sync",
+      codename: "SYNC_BRIDGE",
+      status: "MVP",
+      asset_links: {
+        repo: "https://github.com/T361/airtable-webflow-sync"
+      },
+      stack: ["Node.js", "Airtable API", "Webflow v2 API"],
+      architecture_specs: {
+        complexity_rating: "Low - Integration Tooling",
+        layer_breakdown: [
+          "Airtable → Webflow Field Mapping",
+          "Create/Update/Publish Pipeline"
+        ],
+        core_features: [
+          "Automatic Create-or-Update per Record",
+          "Batch Publish to Webflow CMS",
+          "Schema Inspection CLI"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "N/A",
+          ui_library: "N/A",
+          state_management: "N/A"
+        },
+        backend: {
+          runtime: "Node.js (ESM)",
+          database: "Airtable / Webflow CMS"
+        }
+      }
+    },
     "legalgram_enterprise": {
       id: "legalgram_enterprise",
       public_name: "Legalgram",
@@ -258,6 +395,48 @@ export const VEXA_MANIFEST: VexaManifest = {
     }
   },
   professional_logs: [
+    {
+      id: "log_00a",
+      entity: "Prompt to Flow",
+      role: "Summer Intern — AI Product Developer & Engineer",
+      duration: "Jul 2026 - Present",
+      highlights: [
+        "Leading system design and architecture for an AI-native workflow automation platform at NIC Islamabad.",
+        "Designing agentic AI / LLM pipeline workflows integrated into the core product.",
+        "Overseeing Git workflows, code review standards, and deployment pipelines across the engineering team."
+      ]
+    },
+    {
+      id: "log_00b",
+      entity: "Energytech Cypher",
+      role: "Intern (Remote, Houston TX)",
+      duration: "Jun 2026 - Present",
+      highlights: [
+        "Building and testing Agentic AI automation projects for climate-tech operational workflows.",
+        "Integrating internal systems to streamline technical operations."
+      ]
+    },
+    {
+      id: "log_00c",
+      entity: "Pixoraft Solution",
+      role: "Back End Developer (Remote, Birmingham UK)",
+      duration: "Apr 2026 - Present",
+      highlights: [
+        "Engineered scalable architecture and optimized relational schemas for production workflows.",
+        "Deployed Edge Functions via Render and Railway; integrated Supabase for real-time sync and auth.",
+        "Implemented Firebase Cloud Messaging (FCM) for cross-platform push notifications."
+      ]
+    },
+    {
+      id: "log_00d",
+      entity: "Trilles AI",
+      role: "Full Stack Engineer",
+      duration: "Jun 2026 - Jul 2026",
+      highlights: [
+        "Spearheaded end-to-end development of the ChatWalrus admin dashboard for e-learning cohort analytics.",
+        "Architected the full frontend/backend for course progress, assessments, milestones, and alerts."
+      ]
+    },
     {
       id: "log_01",
       entity: "Tashi Tech Corporation",
@@ -330,9 +509,13 @@ export const VEXA_MANIFEST: VexaManifest = {
                </div>
                <div className="flex justify-between w-64"><span className="text-neon-cobalt">LEGALGRAM</span><span className="text-signal-green">PROD</span></div>
                <div className="flex justify-between w-64"><span className="text-neon-cobalt">PLAYISTAN</span><span className="text-signal-green">PROD</span></div>
+               <div className="flex justify-between w-64"><span className="text-neon-cobalt">WALRUS_OPS</span><span className="text-signal-green">PROD</span></div>
+               <div className="flex justify-between w-64"><span className="text-neon-cobalt">EMERGENT_ATLAS</span><span className="text-signal-green">PROD</span></div>
+               <div className="flex justify-between w-64"><span className="text-neon-cobalt">ARCHITECTURE_OF_TRUTH</span><span className="text-signal-green">PROD</span></div>
                <div className="flex justify-between w-64"><span className="text-neon-cobalt">YOU_GRAM</span><span className="text-yellow-500">STAGING</span></div>
                <div className="flex justify-between w-64"><span className="text-neon-cobalt">META_FORGE</span><span className="text-gray-400">MVP</span></div>
                <div className="flex justify-between w-64"><span className="text-neon-cobalt">STUDENT_HUB</span><span className="text-gray-400">MVP</span></div>
+               <div className="flex justify-between w-64"><span className="text-neon-cobalt">SYNC_BRIDGE</span><span className="text-gray-400">MVP</span></div>
             </div>
         )
     },
