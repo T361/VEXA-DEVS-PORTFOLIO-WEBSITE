@@ -52,7 +52,7 @@ export const VEXA_MANIFEST: VexaManifest = {
     ]
   },
   capability_matrix: {
-    deployment_targets: ["Vercel", "Railway", "AWS EC2", "Render", "DigitalOcean"],
+    deployment_targets: ["Vercel", "Railway", "AWS EC2", "Render", "DigitalOcean", "Kubernetes"],
     technical_arsenal: [
       { id: 'next', label: 'Next.js 14', category: 'core', x: 300, y: 100, connections: ['react', 'tailwind', 'vercel', 'supabase'] },
       { id: 'react', label: 'React', category: 'core', x: 150, y: 150, connections: ['next'] },
@@ -611,8 +611,8 @@ export const VEXA_MANIFEST: VexaManifest = {
       role: "Full-Stack AI Engineer (Remote, United States)",
       duration: "Jul 2026 - Present",
       highlights: [
-        "Designing autonomous, agentic research and reasoning pipelines using multi-agent orchestration (LangGraph) for asynchronous production workflows.",
-        "Writing resilient, schema-constrained AI code paths to guarantee structured, verifiable LLM outputs.",
+        "Company OS (confidential internal operations platform) — designing autonomous, agentic research and reasoning pipelines using multi-agent orchestration (LangGraph) for asynchronous production workflows.",
+        "SLM Factory (confidential small-language-model fine-tuning and serving pipeline) — writing resilient, schema-constrained AI code paths to guarantee structured, verifiable LLM outputs.",
         "Owning secure systems architecture across prompt engineering and context-retrieval mechanisms in a compliance-conscious environment."
       ]
     },
@@ -715,9 +715,9 @@ export const VEXA_MANIFEST: VexaManifest = {
                 <div className="pl-2 border-l border-neon-cobalt/50">
                     <div>AI: LangChain, LangGraph, RAG, MCP, Groq, Pinecone</div>
                     <div>Frontend: Next.js 14, React, Tailwind, Framer Motion</div>
-                    <div>Backend: Node.js, Express, FastAPI, Socket.io</div>
+                    <div>Backend: Node.js, Express, NestJS, FastAPI, Socket.io</div>
                     <div>Data: PostgreSQL, MongoDB Atlas, Redis, Supabase</div>
-                    <div>Infra: Vercel, GCP, Azure, AWS, Docker</div>
+                    <div>Infra: Vercel, GCP, Azure, AWS, Docker, Kubernetes</div>
                 </div>
             </div>
         )
