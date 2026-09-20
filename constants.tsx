@@ -495,6 +495,40 @@ export const VEXA_MANIFEST: VexaManifest = {
         }
       }
     },
+    "civic_pulse": {
+      id: "civic_pulse",
+      public_name: "CivicPulse",
+      codename: "CIVIC_TRIAGE",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/CivicPulse-SCD"
+      },
+      stack: ["FastAPI", "Kubernetes", "OpenTelemetry", "Grafana", "Prometheus"],
+      architecture_specs: {
+        complexity_rating: "High - AI Triage System",
+        layer_breakdown: [
+          "Swappable LLM Classifier with Deterministic Fallback Ladder",
+          "OpenTelemetry Instrumentation",
+          "Grafana + Prometheus Observability Stack"
+        ],
+        core_features: [
+          "Zero Citizen-Facing Failures Under Provider Outages",
+          "AI-Provider Timeout / Rate-Limit Fallback",
+          "Kubernetes-Deployed Triage Pipeline"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "N/A",
+          ui_library: "N/A",
+          state_management: "N/A"
+        },
+        backend: {
+          runtime: "Python (FastAPI)",
+          database: "PostgreSQL"
+        }
+      }
+    },
     "smart_disaster_response": {
       id: "smart_disaster_response",
       public_name: "Smart Disaster Response MIS",
