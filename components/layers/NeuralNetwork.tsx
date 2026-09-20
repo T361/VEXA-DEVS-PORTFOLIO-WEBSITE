@@ -17,6 +17,7 @@ const NeuralNetwork: React.FC = () => {
       case 'backend': return '#10B981'; // signal-green
       case 'data': return '#EF4444'; // alert-red
       case 'cloud': return '#F59E0B'; // amber
+      case 'ai': return '#A855F7'; // violet
       default: return '#9CA3AF';
     }
   };

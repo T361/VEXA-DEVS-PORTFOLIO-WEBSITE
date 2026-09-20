@@ -81,7 +81,7 @@ export interface ProjectAsset {
 export interface TechNode {
   id: string;
   label: string;
-  category: 'core' | 'backend' | 'cloud' | 'data';
+  category: 'core' | 'backend' | 'cloud' | 'data' | 'ai';
   x: number;
   y: number;
   connections: string[];

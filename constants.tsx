@@ -5,7 +5,7 @@ export const VEXA_MANIFEST: VexaManifest = {
   agency_core: {
     entity: "VEXA DEVS",
     tagline: "DESIGN | BUILD | DEPLOY",
-    professional_profile: "Specializing in MERN Stack, Scalable SaaS, and Custom CRMs. We deliver live products, not just files.",
+    professional_profile: "Full-stack AI engineering: agentic systems, LangGraph orchestration, RAG pipelines, and production MERN/Next.js SaaS. We deliver live products, not just files.",
     founded: "2024",
     global_status: "ONLINE"
   },
@@ -26,22 +26,22 @@ export const VEXA_MANIFEST: VexaManifest = {
     }
   },
   strategic_protocol: {
-    mission_directive: "We do not merely write code; we engineer digital sovereignty. VEXA DEVS operates at the intersection of high-fidelity design and fault-tolerant systems architecture. Our mandate is absolute: Deliver production-grade assets that survive the rigors of real-world scale.",
+    mission_directive: "We do not merely write code; we engineer digital sovereignty. VEXA DEVS operates at the intersection of agentic AI systems and fault-tolerant full-stack architecture. Our mandate is absolute: Deliver production-grade, AI-native assets that survive the rigors of real-world scale.",
     operational_pillars: [
       {
         id: "OP_01",
+        title: "AGENTIC AI ENGINEERING",
+        desc: "Multi-agent orchestration (LangGraph), RAG pipelines, and schema-constrained LLM outputs. We build agents that are verifiable and swappable, not black boxes bolted onto a UI."
+      },
+      {
+        id: "OP_02",
         title: "PRECISION ENGINEERING",
         desc: "Every component is treated as a critical system. We reject bloat. We prioritize atomic design principles and type-safe architectures to ensure long-term maintainability."
       },
       {
-        id: "OP_02",
+        id: "OP_03",
         title: "VELOCITY & MOMENTUM",
         desc: "Rapid deployment cycles utilizing modern CI/CD pipelines. From local host to global edge networks, our delivery pipeline is automated, tested, and secure."
-      },
-      {
-        id: "OP_03",
-        title: "SCALABLE INFRASTRUCTURE",
-        desc: "Building for tomorrow's load, today. Utilizing sharded databases, edge caching, and serverless compute to handle exponential growth without architectural refactors."
       }
     ],
     execution_policy: [
@@ -67,7 +67,13 @@ export const VEXA_MANIFEST: VexaManifest = {
       { id: 'cloudinary', label: 'Cloudinary', category: 'cloud', x: 750, y: 200, connections: ['react', 'node'] },
       { id: 'railway', label: 'Railway', category: 'cloud', x: 450, y: 50, connections: ['node'] },
       { id: 'render', label: 'Render', category: 'cloud', x: 600, y: 50, connections: ['node'] },
-      { id: 'heroku', label: 'Heroku', category: 'cloud', x: 750, y: 100, connections: ['node'] }
+      { id: 'heroku', label: 'Heroku', category: 'cloud', x: 750, y: 100, connections: ['node'] },
+      { id: 'langgraph', label: 'LangGraph', category: 'ai', x: 300, y: 450, connections: ['langchain', 'fastapi'] },
+      { id: 'langchain', label: 'LangChain', category: 'ai', x: 150, y: 500, connections: ['langgraph', 'pinecone'] },
+      { id: 'fastapi', label: 'FastAPI', category: 'ai', x: 450, y: 500, connections: ['langgraph', 'node'] },
+      { id: 'pinecone', label: 'Pinecone', category: 'ai', x: 150, y: 400, connections: ['langchain'] },
+      { id: 'mcp', label: 'MCP', category: 'ai', x: 600, y: 450, connections: ['fastapi'] },
+      { id: 'groq', label: 'Groq', category: 'ai', x: 450, y: 400, connections: ['fastapi'] }
     ]
   },
   freelance_asset_registry: {
@@ -600,31 +606,42 @@ export const VEXA_MANIFEST: VexaManifest = {
   },
   professional_logs: [
     {
-      id: "log_00a",
-      entity: "Prompt to Flow",
-      role: "Summer Intern — AI Product Developer & Engineer",
+      id: "log_000",
+      entity: "SynapseAI Solutions",
+      role: "Full-Stack AI Engineer (Remote, United States)",
       duration: "Jul 2026 - Present",
       highlights: [
-        "Leading system design and architecture for an AI-native workflow automation platform at NIC Islamabad.",
-        "Designing agentic AI / LLM pipeline workflows integrated into the core product.",
-        "Overseeing Git workflows, code review standards, and deployment pipelines across the engineering team."
+        "Designing autonomous, agentic research and reasoning pipelines using multi-agent orchestration (LangGraph) for asynchronous production workflows.",
+        "Writing resilient, schema-constrained AI code paths to guarantee structured, verifiable LLM outputs.",
+        "Owning secure systems architecture across prompt engineering and context-retrieval mechanisms in a compliance-conscious environment."
+      ]
+    },
+    {
+      id: "log_00a",
+      entity: "Prompt to Flow (P2F)",
+      role: "AI & Cloud Intern",
+      duration: "Jul 2026 - Sep 2026",
+      highlights: [
+        "Led system design and architecture for an AI-native workflow automation platform at NIC Islamabad.",
+        "Designed agentic AI / LLM pipeline workflows integrated into the core product.",
+        "Oversaw Git workflows, code review standards, and deployment pipelines across the engineering team."
       ]
     },
     {
       id: "log_00b",
       entity: "Energytech Cypher",
-      role: "Intern (Remote, Houston TX)",
-      duration: "Jun 2026 - Present",
+      role: "Agentic AI Intern (Remote, Houston TX)",
+      duration: "Jun 2026 - Aug 2026",
       highlights: [
-        "Building and testing Agentic AI automation projects for climate-tech operational workflows.",
-        "Integrating internal systems to streamline technical operations."
+        "Built and tested Agentic AI automation projects for climate-tech operational workflows.",
+        "Integrated internal systems to streamline technical operations."
       ]
     },
     {
       id: "log_00c",
       entity: "Pixoraft Solution",
       role: "Back End Developer (Remote, Birmingham UK)",
-      duration: "Apr 2026 - Present",
+      duration: "Apr 2026 - Jun 2026",
       highlights: [
         "Engineered scalable architecture and optimized relational schemas for production workflows.",
         "Deployed Edge Functions via Render and Railway; integrated Supabase for real-time sync and auth.",
@@ -689,17 +706,18 @@ export const VEXA_MANIFEST: VexaManifest = {
       )
     },
     about: {
-      output: "VEXA DEVS [EST. 2024] // Specialized in high-performance web applications, complex UI systems, and scalable backend architectures."
+      output: "VEXA DEVS [EST. 2024] // Full-stack AI engineering: agentic systems, LangGraph orchestration, RAG pipelines, and scalable backend architectures."
     },
     stack: {
         output: (
             <div className="text-xs space-y-1">
                 <div className="text-gray-500">CORE ARCHITECTURE:</div>
                 <div className="pl-2 border-l border-neon-cobalt/50">
+                    <div>AI: LangChain, LangGraph, RAG, MCP, Groq, Pinecone</div>
                     <div>Frontend: Next.js 14, React, Tailwind, Framer Motion</div>
-                    <div>Backend: Node.js, Express, Socket.io</div>
-                    <div>Data: MongoDB Atlas, Redis, Supabase</div>
-                    <div>Infra: Vercel, AWS, Docker</div>
+                    <div>Backend: Node.js, Express, FastAPI, Socket.io</div>
+                    <div>Data: PostgreSQL, MongoDB Atlas, Redis, Supabase</div>
+                    <div>Infra: Vercel, GCP, Azure, AWS, Docker</div>
                 </div>
             </div>
         )
