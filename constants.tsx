@@ -294,6 +294,40 @@ export const VEXA_MANIFEST: VexaManifest = {
         }
       }
     },
+    "wise_lab": {
+      id: "wise_lab",
+      public_name: "WISE Lab",
+      codename: "WISE_PROTOTYPE",
+      status: "PRODUCTION",
+      asset_links: {
+        repo: "https://github.com/T361/WISE-LAB"
+      },
+      stack: ["React", "Vite", "Supabase", "Three.js", "Tailwind CSS"],
+      architecture_specs: {
+        complexity_rating: "Medium - Interactive Front-End Prototype",
+        layer_breakdown: [
+          "Single-Page Static Front-End (No Backend)",
+          "3D Morphing Particle Hero (Three.js)",
+          "State-Driven Page Recoloring per Track"
+        ],
+        core_features: [
+          "Founder / Enterprise Track Switching",
+          "Interactive 3D Hero Animation",
+          "Fully Static, Zero-API-Key Deployment"
+        ]
+      },
+      technical_deep_dive: {
+        frontend: {
+          framework: "React (Vite)",
+          ui_library: "Tailwind CSS",
+          state_management: "React Hooks"
+        },
+        backend: {
+          runtime: "N/A (Static)",
+          database: "Supabase (optional)"
+        }
+      }
+    },
     "tashi_tech_website": {
       id: "tashi_tech_website",
       public_name: "Tashi Technologies",
