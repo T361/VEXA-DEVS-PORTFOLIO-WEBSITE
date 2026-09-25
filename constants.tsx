@@ -676,7 +676,7 @@ export const VEXA_MANIFEST: VexaManifest = {
     {
       id: "log_000",
       entity: "SynapseAI Solutions",
-      role: "Full-Stack AI Engineer (Remote, United States)",
+      role: "Full-Stack AI Engineer (Remote, Texas, USA)",
       duration: "Jul 2026 - Present",
       highlights: [
         "Company OS (confidential internal operations platform) — designing autonomous, agentic research and reasoning pipelines using multi-agent orchestration (LangGraph) for asynchronous production workflows.",
